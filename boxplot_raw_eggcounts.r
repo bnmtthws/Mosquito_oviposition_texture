@@ -16,7 +16,7 @@ theme_set(
 
 ## raw input text data file
 
-data_df <- read.csv(file="raw_eggcounts_LVP_ORL.txt", head=TRUE,sep=",", skipNul=TRUE, stringsAsFactors = FALSE)
+data_df <- read.csv(file="../raw_eggcounts_LVP_ORL.txt", head=TRUE,sep=",", skipNul=TRUE, stringsAsFactors = FALSE)
 
 ## function to get number of trials if needed
 
@@ -41,7 +41,7 @@ data_df$genotypemicrons3 <- interaction(data_df$genotype3, data_df$microns)
 
 ## output file
 
-pdf(file="C:/Users/HP/Desktop/RStudio/Texture_Plots/raw_eggcounts_ORL_LVP_T2.pdf",width=10, height=5)
+pdf(file="raw_eggcounts_ORL_LVP_T2.pdf",width=10, height=5)
 
 ## graph title 
 

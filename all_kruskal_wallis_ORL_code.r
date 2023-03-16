@@ -5,7 +5,7 @@ library(multcomp)
 library(emmeans)
 library(dplyr)
 
-data_df <- read.csv(file="texture_data_Orlando_shortened_up_to_80.txt", head=TRUE,sep=",", skipNul=TRUE, stringsAsFactors = TRUE)
+data_df <- read.csv(file="../texture_data_Orlando_shortened_up_to_80.txt", head=TRUE,sep=",", skipNul=TRUE, stringsAsFactors = TRUE)
 
 data_df 
 
@@ -55,7 +55,7 @@ summary(post_test)
 inter.test1 <- emmeans(res_aov,"grit2")
 cld(inter.test1, Letter="abcdefghijk")
 
-data_df <- read.csv(file="ALL_ND_ORL_T1_shortened_up_to_80.txt", header=TRUE,sep="\t", skipNul=TRUE, stringsAsFactors = TRUE, row.names=NULL)
+data_df <- read.csv(file="../ALL_ND_ORL_T1_shortened_up_to_80.txt", header=TRUE,sep="\t", skipNul=TRUE, stringsAsFactors = TRUE, row.names=NULL)
 
 data_df$logavg6 <- log(data_df$avg6) 
 
